@@ -11,6 +11,8 @@ import Cocoa
 class SBWindowController: NSWindowController {
     //此处设置TitleBarHeight
     let kTitlebarHeight: CGFloat = 54.0
+    //调节button按钮初始x轴坐标
+    var buttonX:CGFloat = 12.0
     //三个按钮数字
     var buttons: [NSButton]!
     override func windowDidLoad() {
@@ -32,7 +34,6 @@ class SBWindowController: NSWindowController {
         titlebarContainerFrame?.size.height = CGFloat(kTitlebarHeight)
         titlebarContainerView?.frame = titlebarContainerFrame!
         
-        var buttonX:CGFloat = 12.0
         let closeButton = window.standardWindowButton(.closeButton)
         let minimizeButton = window.standardWindowButton(.miniaturizeButton)
         let zoomButton = window.standardWindowButton(.zoomButton)

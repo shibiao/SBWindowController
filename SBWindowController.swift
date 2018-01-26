@@ -2,9 +2,28 @@
 //  SBWindowController.swift
 //  Mac_test
 //
-//  Created by sycf_ios on 2018/1/26.
-//  Copyright © 2018年 sycf_ios. All rights reserved.
+//  Created by 石彪 on 2018/1/26.
+//  Copyright © 2018年 石彪. All rights reserved.
 //
+/*
+ SBWindowController
+ 
+ SBWindowController可以使任意自定义高度TitleBar中的系统左上角3个按钮居中显示,还原纯原生close、mini、zoom按钮
+ 
+ 使用方法：拖拽SBWindowController.swift文件进项目中，然后将继承于SBWindowController.swift与窗口控制器相关联，如下所示
+ 
+ import Cocoa
+ 
+ class MainWindowController: SBWindowController {
+ 
+     override func windowDidLoad() {
+     super.windowDidLoad()
+ 
+     }
+ 
+ }
+ 
+*/
 
 import Cocoa
 

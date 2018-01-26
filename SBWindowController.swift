@@ -12,7 +12,7 @@ class SBWindowController: NSWindowController {
     //此处设置TitleBarHeight
     let kTitlebarHeight: CGFloat = 54.0
     //调节button按钮初始x轴坐标
-    let buttonOriginX: CGFloat = 12.0
+    var buttonOriginX: CGFloat = 12.0
     //三个按钮数字
     var buttons: [NSButton]!
     override func windowDidLoad() {
